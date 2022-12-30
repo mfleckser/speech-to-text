@@ -3,6 +3,5 @@ import tensorflow as tf
 import wave
 import preprocessing
 
-audio, samples, sr = preprocessing.load("samples/simons4.wav")
-print(samples)
-preprocessing.spectogram(audio, samples, sr)
+audio, sr = preprocessing.load("samples/simons4.wav")
+preprocessing.spectrogram(audio, sr)
